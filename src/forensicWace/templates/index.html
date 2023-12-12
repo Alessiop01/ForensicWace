@@ -45,7 +45,11 @@
                 </div>
             </div>
             <div class="col">
+                {% if noDbError == 1 %}
+                <div class="card shadow border-start-success py-2" style="opacity: 0.5; pointer-events: none;">
+                {% elif noDbError == 0 %}
                 <div class="card shadow border-start-success py-2">
+                {% endif %}
                     <div class="card-body">
                         <div class="row align-items-center no-gutters">
                             <div class="col me-2">
@@ -58,7 +62,11 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card shadow border-start-warning py-2">
+                {% if noDbError == 1 %}
+                <div class="card shadow border-start-success py-2" style="opacity: 0.5; pointer-events: none;">
+                {% elif noDbError == 0 %}
+                <div class="card shadow border-start-success py-2">
+                {% endif %}
                     <div class="card-body">
                         <div class="row align-items-center no-gutters">
                             <div class="col me-2">
@@ -73,7 +81,7 @@
         </div>
         <div class="row" style="margin-right: calc(var(--bs-gutter-x));margin-left: calc(var(--bs-gutter-x));">
             <div class="col">
-                <div class="card shadow border-start-primary py-2">
+                <div class="card shadow border-start-success py-2">
                     <div class="card-body">
                         <div class="row align-items-center no-gutters">
                             <div class="col me-2">
@@ -86,7 +94,11 @@
                 </div>
             </div>
             <div class="col">
+                {% if noDbError == 1 %}
+                <div class="card shadow border-start-success py-2" style="opacity: 0.5; pointer-events: none;">
+                {% elif noDbError == 0 %}
                 <div class="card shadow border-start-success py-2">
+                {% endif %}
                     <div class="card-body">
                         <div class="row align-items-center no-gutters">
                             <div class="col me-2">
@@ -99,7 +111,11 @@
                 </div>
             </div>
             <div class="col">
+                {% if noDbError == 1 %}
+                <div class="card shadow border-start-success py-2" style="opacity: 0.5; pointer-events: none;">
+                {% elif noDbError == 0 %}
                 <div class="card shadow border-start-success py-2">
+                {% endif %}
                     <div class="card-body">
                         <div class="row align-items-center no-gutters">
                             <div class="col me-2">
